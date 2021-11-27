@@ -4,8 +4,8 @@ import 'dart:io';
 import 'package:bloc/bloc.dart';
 import 'package:bloc_cats_app/api/exceptions.dart';
 import 'package:bloc_cats_app/api/services.dart';
-import 'package:bloc_cats_app/bloc/cat_breeds/events.dart';
-import 'package:bloc_cats_app/bloc/cat_breeds/states.dart';
+import 'package:bloc_cats_app/bloc/events.dart';
+import 'package:bloc_cats_app/bloc/states.dart';
 import 'package:bloc_cats_app/model/cat_breeds_list.dart';
 
 class CatBreedsBloc extends Bloc<CatBreedsEvents, CatBreedsState> {

@@ -2,7 +2,7 @@ import 'package:bloc_cats_app/api/services.dart';
 import 'package:bloc_cats_app/screens/cat_breeds_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'bloc/cat_breeds/bloc.dart';
+import 'bloc/bloc.dart';
 
 void main() {
   runApp(const MyApp());

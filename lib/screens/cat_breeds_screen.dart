@@ -1,6 +1,6 @@
-import 'package:bloc_cats_app/bloc/cat_breeds/bloc.dart';
-import 'package:bloc_cats_app/bloc/cat_breeds/events.dart';
-import 'package:bloc_cats_app/bloc/cat_breeds/states.dart';
+import 'package:bloc_cats_app/bloc/bloc.dart';
+import 'package:bloc_cats_app/bloc/events.dart';
+import 'package:bloc_cats_app/bloc/states.dart';
 import 'package:bloc_cats_app/model/cat_breeds_list.dart';
 import 'package:bloc_cats_app/screens/cat_breeds_details_screen.dart';
 import 'package:bloc_cats_app/utilities/constants.dart';
@@ -138,76 +138,3 @@ class _CatBreedsScreenState extends State<CatBreedsScreen> {
     );
   }
 }
-
-
-
-
-
-
-// return Padding(
-//                   padding: const EdgeInsets.all(16),
-//                   child: InkWell(
-//                     borderRadius: radius,
-//                     onTap: () {
-//                       Navigator.of(context)
-//                           .push(MaterialPageRoute(builder: (context) {
-//                         return CatBreedDetailsScreen(breed: breed);
-//                       }));
-//                     },
-//                     child: Container(
-//                       decoration: BoxDecoration(
-//                         borderRadius: radius,
-//                         border:
-//                             Border.all(color: Colors.black.withOpacity(0.2)),
-//                         boxShadow: [
-//                           BoxShadow(
-//                             color: Colors.black.withOpacity(0.1),
-//                             blurRadius: 8,
-//                             offset: const Offset(0, 2),
-//                           ),
-//                         ],
-//                       ),
-//                       child: Padding(
-//                         padding: const EdgeInsets.all(8.0),
-//                         child: Row(
-//                           children: [
-//                             Image.network(
-//                               breed.imageUrl,
-//                               width: 120,
-//                               height: 120,
-//                               fit: BoxFit.fill,
-//                             ),
-//                             const SizedBox(
-//                               width: 10,
-//                             ),
-//                             Expanded(
-//                               child: Column(
-//                                 crossAxisAlignment: CrossAxisAlignment.start,
-//                                 children: [
-//                                   Text(breed.name, style: nameTextStyle),
-//                                   spaceBox,
-//                                   Row(
-//                                     children: [
-//                                       const Text(
-//                                         'Origin: ',
-//                                         style: nameTextStyle,
-//                                       ),
-//                                       Text(
-//                                         breed.origin,
-//                                         style: valueTextStyle,
-//                                       ),
-//                                     ],
-//                                   ),
-//                                   spaceBox,
-//                                   checkWiki(breed.wikiUrl),
-//                                 ],
-//                               ),
-//                             ),
-//                           ],
-//                         ),
-//                       ),
-//                     ),
-//                   ),
-//                 );
-//               },
-//             );
