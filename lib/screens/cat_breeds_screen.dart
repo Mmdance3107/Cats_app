@@ -117,9 +117,11 @@ class _CatBreedsScreenState extends State<CatBreedsScreen> {
                                     'Origin: ',
                                     style: nameTextStyle,
                                   ),
-                                  Text(
-                                    breed.origin,
-                                    style: valueTextStyle,
+                                  Expanded(
+                                    child: Text(
+                                      breed.origin,
+                                      style: valueTextStyle,
+                                    ),
                                   ),
                                 ],
                               ),
