@@ -114,7 +114,7 @@ class _CatBreedsScreenState extends State<CatBreedsScreen> {
                               Row(
                                 children: [
                                   const Text(
-                                    'Origin: ',
+                                    'Original: ',
                                     style: nameTextStyle,
                                   ),
                                   Expanded(
