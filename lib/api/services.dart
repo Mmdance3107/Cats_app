@@ -6,11 +6,12 @@ abstract class CatBreedsRepo {
 }
 
 class CatBreedsServices implements CatBreedsRepo {
-  static const apiUrl = 'https://api.thecatapi.com/v1/breeds';
+  static const basicUrl = 'https://api.thecatapi.com/v1';
+  static const breedsUrl = '$basicUrl/breeds';
 
   @override
   Future<List<CatBreed>> getCatBreedsList() async {
-    Response<String> response = await Dio().get(apiUrl);
+    Response<String> response = await Dio().get(breedsUrl);
     String body = response.data.toString();
     List<CatBreed> breeds = catBreedFromJson(body);
     return breeds;
